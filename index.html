@@ -1,168 +1,233 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="google-site-verification" content="jOqAKOMZcujBCQyXSfq56BZfZPbrx4WmMIe5dLwCGFI" />
-<title>Renda Online 2026 | Como Ganhar Dinheiro em Casa</title>
-<meta name="description" content="Aprenda formas reais de ganhar dinheiro online, renda extra e apps que pagam de verdade.">
-<meta name="keywords" content="ganhar dinheiro online, renda extra, apps que pagam, trabalhar em casa">
-
-<style>
-body { margin:0; font-family:Arial, sans-serif; background:#fff; color:#222; }
-header { padding:15px; text-align:center; font-weight:bold; font-size:22px; border-bottom:1px solid #eee; }
-nav { display:flex; justify-content:center; gap:15px; padding:10px; border-bottom:1px solid #eee; flex-wrap:wrap; }
-nav a { text-decoration:none; color:#333; font-size:14px; }
-.container { max-width:800px; margin:auto; padding:15px; }
-.card { border-bottom:1px solid #eee; padding:15px 0; }
-.card h2 { font-size:18px; }
-.card p { font-size:14px; color:#555; }
-.card button { margin-top:10px; padding:8px 12px; background:black; color:white; border:none; cursor:pointer; }
-.article { display:none; }
-.article h1 { font-size:24px; }
-.article p { line-height:1.7; margin-bottom:15px; }
-.ad { margin:20px 0; padding:15px; background:#f3f3f3; text-align:center; font-size:12px; color:#777; }
-footer { text-align:center; padding:20px; font-size:12px; color:#777; border-top:1px solid #eee; }
-form input, form textarea { width:100%; margin-bottom:10px; padding:8px; border:1px solid #ccc; border-radius:4px; }
-form button { padding:10px 15px; background:black; color:white; border:none; cursor:pointer; }
-</style>
+<head>    
+    <meta charset="UTF-8">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="jOqAKOMZcujBCQyXSfq56BZfZPbrx4WmMIe5dLwCGFI" />
+    <title>VEXIS | Marketplace Gamer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
+        body { background-color: #f4f4f7; font-family: 'Inter', sans-serif; overflow-x: hidden; }
+        .product-card { transition: all 0.3s ease; }
+        .active-filter { background-color: #facc15 !important; color: #000 !important; }
+        .hide-scroll::-webkit-scrollbar { display: none; }
+        
+        @keyframes ticker {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        .animate-ticker { display: flex; width: 200%; animation: ticker 25s linear infinite; }
+    </style>
 </head>
+<body class="flex flex-col min-h-screen">
 
-<body>
+    <header class="bg-[#5119b7] text-white sticky top-0 z-[100] shadow-lg">
+        <div class="max-w-[1400px] mx-auto px-4 py-4 flex flex-col gap-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center gap-2 cursor-pointer" onclick="window.location.reload()">
+                    <i class="fa-solid fa-dragon text-2xl"></i>
+                    <h1 class="text-2xl font-800 tracking-tighter uppercase italic">VEXIS</h1>
+                </div>
+                <div class="flex-1 max-w-xl mx-4 relative">
+                    <input type="text" id="mainSearch" onkeyup="filterBySearch()" placeholder="Buscar ofertas..." 
+                           class="w-full bg-white/10 border border-white/20 rounded-lg py-2 px-10 focus:bg-white focus:text-black focus:outline-none transition-all">
+                    <i class="fa-solid fa-search absolute left-3 top-1/2 -translate-y-1/2 text-white/50"></i>
+                </div>
+            </div>
+            <nav class="flex gap-2 overflow-x-auto hide-scroll pb-1">
+                <button onclick="filterByCategory('', this)" class="cat-btn active-filter px-4 py-2 rounded-md bg-white/10 text-[11px] font-bold uppercase whitespace-nowrap">Explorar Tudo</button>
+                <button onclick="filterByCategory('Steam', this)" class="cat-btn px-4 py-2 rounded-md bg-white/10 text-[11px] font-bold uppercase whitespace-nowrap">Steam Keys</button>
+                <button onclick="filterByCategory('Xbox', this)" class="cat-btn px-4 py-2 rounded-md bg-white/10 text-[11px] font-bold uppercase whitespace-nowrap">Xbox</button>
+                <button onclick="filterByCategory('PlayStation', this)" class="cat-btn px-4 py-2 rounded-md bg-white/10 text-[11px] font-bold uppercase whitespace-nowrap">PlayStation</button>
+                <button onclick="filterByCategory('Edition', this)" class="cat-btn px-4 py-2 rounded-md bg-white/10 text-[11px] font-bold uppercase whitespace-nowrap">Edições Especiais</button>
+                <button onclick="filterByCategory('Gift', this)" class="cat-btn px-4 py-2 rounded-md bg-white/10 text-[11px] font-bold uppercase whitespace-nowrap">Gift Cards</button>
+            </nav>
+        </div>
+    </header>
 
-<header>💸 Renda Online 2026</header>
+    <main class="max-w-[1400px] mx-auto px-4 py-8 flex-grow w-full">
+        
+        <section onclick="window.open('https://s.shopee.com.br/5VR29aqmWS', '_blank')" class="mb-6 cursor-pointer rounded-2xl overflow-hidden h-[200px] md:h-[350px] relative bg-black shadow-lg">
+            <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&q=80&w=1200" class="w-full h-full object-cover opacity-60">
+            <div class="absolute inset-0 p-6 md:p-12 flex flex-col justify-center items-start">
+                <span class="bg-yellow-400 text-black px-3 py-1 rounded-full text-[10px] font-black uppercase mb-2 italic">Destaques da Semana</span>
+                <h2 class="text-2xl md:text-5xl font-800 text-white leading-tight mb-4 uppercase italic">Upgrade no seu Setup<br>com Preço Imbatível</h2>
+                <button class="bg-white text-[#5119b7] font-black px-6 py-2 rounded-lg uppercase text-xs shadow-xl">Confira Agora</button>
+            </div>
+        </section>
 
-<nav>
-<a href="#" onclick="showHome()">Home</a>
-<a href="#" onclick="openPost('sobre')">Sobre</a>
-<a href="#" onclick="openPost('contato')">Contato</a>
-<a href="#" onclick="openPost('privacidade')">Política de Privacidade</a>
-</nav>
+        <section class="w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] bg-[#5119b7] text-white py-2 mb-12 overflow-hidden shadow-md">
+            <div class="animate-ticker text-[10px] font-black uppercase tracking-[3px] flex items-center gap-12 whitespace-nowrap">
+                <span>PROMOÇÕES ATIVAS</span> <span>•</span> <span>ENTREGA IMEDIATA</span> <span>•</span> <span>MELHORES PREÇOS</span> <span>•</span> <span>VEXIS GAMES MARKETPLACE</span>
+                <span>PROMOÇÕES ATIVAS</span> <span>•</span> <span>ENTREGA IMEDIATA</span> <span>•</span> <span>MELHORES PREÇOS</span> <span>•</span> <span>VEXIS GAMES MARKETPLACE</span>
+            </div>
+        </section>
 
-<!-- HOME -->
-<div class="container" id="home">
+        <section id="gameSection">
+            <h2 id="sectionTitle" class="text-xl md:text-2xl font-800 uppercase italic mb-8 border-l-4 border-[#5119b7] pl-4 text-gray-800">Recomendados</h2>
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 md:gap-6" id="mainGrid"></div>
+        </section>
 
-<div class="card">
-<h2>5 apps que pagam via Pix em 2026</h2>
-<p>Descubra aplicativos que realmente pagam e podem gerar renda extra pelo celular.</p>
-<button onclick="openPost('post1')">Ler mais</button>
-</div>
+        <section class="w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] bg-black text-white py-3 my-12 overflow-hidden">
+            <div class="animate-ticker text-[10px] font-bold uppercase tracking-[2px] flex items-center gap-10 whitespace-nowrap">
+                <span>GTA VI</span> <i class="fa-solid fa-fire text-orange-500"></i>
+                <span>ELDEN RING DLC</span> <i class="fa-solid fa-fire text-orange-500"></i>
+                <span>XBOX GAME PASS</span> <i class="fa-solid fa-fire text-orange-500"></i>
+                <span>PS PLUS</span> <i class="fa-solid fa-fire text-orange-500"></i>
+                <span>ROBUX</span> <i class="fa-solid fa-fire text-orange-500"></i>
+            </div>
+        </section>
 
-<div class="card">
-<h2>Como ganhar dinheiro pelo celular</h2>
-<p>Formas simples e reais de começar usando apenas seu celular.</p>
-<button onclick="openPost('post2')">Ler mais</button>
-</div>
+        <section class="mb-12 rounded-2xl overflow-hidden h-[250px] md:h-[380px] relative bg-gray-900 border-2 border-white">
+            <img src="imagemheader.jpg" class="w-full h-full object-cover opacity-70">
+            <div class="absolute inset-0 bg-gradient-to-r from-black/90 via-black/30 p-8 md:p-16 flex flex-col justify-center items-start text-white">
+                <h2 class="text-3xl md:text-5xl font-900 italic uppercase mb-4">Domine o Jogo.<br>Economize Agora.</h2>
+                <button onclick="window.open('https://s.shopee.com.br/5VR29aqmWS', '_blank')" class="bg-[#5119b7] font-black px-8 py-3 rounded-xl uppercase text-xs">Ver Ofertas</button>
+            </div>
+        </section>
 
-<div class="card">
-<h2>7 formas de renda extra em casa</h2>
-<p>Ideias práticas para aumentar sua renda sem sair de casa.</p>
-<button onclick="openPost('post3')">Ler mais</button>
-</div>
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 md:gap-6" id="moreGamesGrid"></div>
 
-<div class="card">
-<h2>Renda extra com redes sociais</h2>
-<p>Como monetizar Instagram, TikTok e YouTube mesmo sendo iniciante.</p>
-<button onclick="openPost('post4')">Ler mais</button>
-</div>
+    </main>
 
-<div class="card">
-<h2>Trabalhar em casa sem investimento</h2>
-<p>Descubra oportunidades que não exigem dinheiro inicial.</p>
-<button onclick="openPost('post5')">Ler mais</button>
-</div>
+    <footer class="bg-gray-900 text-gray-400 py-12 border-t-8 border-[#5119b7]">
+        <div class="max-w-[1400px] mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-10">
+                <div>
+                    <div class="flex items-center gap-2 mb-4 text-white">
+                        <i class="fa-solid fa-dragon text-2xl text-[#5119b7]"></i>
+                        <span class="text-2xl font-900 italic uppercase tracking-tighter">VEXIS</span>
+                    </div>
+                    <p class="text-xs leading-relaxed opacity-70">
+                        A VEXIS é uma plataforma de curadoria de ofertas gamer. 
+                        Nossa missão é encontrar os melhores preços em jogos e acessórios para facilitar a sua próxima aventura.
+                    </p>
+                </div>
 
-</div>
+                <div>
+                    <h4 class="text-white font-bold uppercase text-[11px] tracking-widest mb-5">Formas de Pagamento</h4>
+                    <div class="flex flex-wrap gap-4 text-2xl text-gray-500">
+                        <i class="fa-brands fa-cc-visa hover:text-white transition-colors"></i>
+                        <i class="fa-brands fa-cc-mastercard hover:text-white transition-colors"></i>
+                        <i class="fa-brands fa-pix hover:text-white transition-colors"></i>
+                        <i class="fa-solid fa-barcode hover:text-white transition-colors"></i>
+                        <i class="fa-brands fa-apple-pay hover:text-white transition-colors"></i>
+                    </div>
+                </div>
 
-<!-- POSTS -->
-<div class="container article" id="post1">
-<h1>5 apps que pagam via Pix em 2026</h1>
-<p>Hoje existem aplicativos que permitem ganhar dinheiro extra pelo celular. Alguns dos melhores são:</p>
-<div class="ad">[Espaço para anúncio]</div>
-<p><strong>1. Kwai</strong> - recompensa por assistir vídeos e indicar amigos.</p>
-<p><strong>2. TikTok Rewards</strong> - bônus por convite.</p>
-<p><strong>3. Google Opinion Rewards</strong> - responda pesquisas rápidas.</p>
-<p><strong>4. Méliuz</strong> - cashback em compras online.</p>
-<p><strong>5. Apps de tarefas</strong> - pequenas tarefas digitais.</p>
-<p>Dica: sempre pesquise antes de usar apps que prometem dinheiro fácil.</p>
-<button onclick="showHome()">← Voltar</button>
-</div>
+                <div>
+                    <h4 class="text-white font-bold uppercase text-[11px] tracking-widest mb-5">Aviso Importante</h4>
+                    <div class="bg-white/5 p-4 rounded-lg border border-white/10">
+                        <p class="text-[10px] leading-relaxed italic">
+                            <strong>Atenção:</strong> A VEXIS funciona estritamente como uma <strong>plataforma de afiliados</strong>. 
+                            Não realizamos a venda direta ou processamento de pagamentos em nosso servidor. 
+                        </p>
+                    </div>
+                </div>
+            </div>
 
-<div class="container article" id="post2">
-<h1>Como ganhar dinheiro pelo celular</h1>
-<p>Trabalhar pelo celular é possível usando apps confiáveis e plataformas digitais. Algumas ideias:</p>
-<div class="ad">[Espaço para anúncio]</div>
-<p>Venda produtos, responda pesquisas, ou use apps que pagam.</p>
-<p>Teste diferentes métodos e mantenha consistência para resultados reais.</p>
-<button onclick="showHome()">← Voltar</button>
-</div>
-
-<div class="container article" id="post3">
-<h1>7 formas de renda extra em casa</h1>
-<p>Freelancer, vendas online, marketing digital e produção de conteúdo são ótimas formas de ganhar dinheiro sem sair de casa.</p>
-<div class="ad">[Espaço para anúncio]</div>
-<p>Escolha uma área e foque nela para ter resultados melhores.</p>
-<button onclick="showHome()">← Voltar</button>
-</div>
-
-<div class="container article" id="post4">
-<h1>Renda extra com redes sociais</h1>
-<p>Monetize suas redes sociais criando conteúdo e utilizando programas de afiliados.</p>
-<div class="ad">[Espaço para anúncio]</div>
-<p>Instagram, TikTok e YouTube podem gerar renda real se você postar consistentemente e atrair público.</p>
-<button onclick="showHome()">← Voltar</button>
-</div>
-
-<div class="container article" id="post5">
-<h1>Trabalhar em casa sem investimento</h1>
-<p>Você pode começar a trabalhar em casa usando apenas seu celular ou computador, sem gastar dinheiro inicial.</p>
-<div class="ad">[Espaço para anúncio]</div>
-<p>Freelancer, vendas online, marketing digital e produção de conteúdo são boas opções.</p>
-<button onclick="showHome()">← Voltar</button>
-</div>
-
-<!-- SOBRE -->
-<div class="container article" id="sobre">
-<h1>Sobre</h1>
-<p>Olá! Meu objetivo é ajudar pessoas a descobrirem formas reais de ganhar dinheiro em casa e online, com segurança e confiabilidade.</p>
-<button onclick="showHome()">← Voltar</button>
-</div>
-
-<!-- CONTATO -->
-<div class="container article" id="contato">
-<h1>Contato</h1>
-<p>Envie uma mensagem para: <strong>hudsmarvanessa@gmail.com</strong></p>
-<form>
-<input type="text" placeholder="Nome">
-<input type="email" placeholder="Email">
-<textarea rows="5" placeholder="Mensagem"></textarea>
-<button type="submit">Enviar</button>
-</form>
-<button onclick="showHome()">← Voltar</button>
-</div>
-
-<!-- POLÍTICA DE PRIVACIDADE -->
-<div class="container article" id="privacidade">
-<h1>Política de Privacidade</h1>
-<p>Este site respeita a sua privacidade. Nenhuma informação será compartilhada sem seu consentimento. Todos os dados coletados são usados apenas para melhorar sua experiência.</p>
-<button onclick="showHome()">← Voltar</button>
-</div>
-
-<footer>
-© 2026 - Renda Online
-</footer>
+            <div class="pt-8 border-t border-white/5 text-center">
+                <p class="text-[9px] uppercase tracking-[3px] font-bold opacity-40">
+                    © 2026 VEXIS GAMES MARKETPLACE | TODOS OS DIREITOS RESERVADOS
+                </p>
+            </div>
+        </div>
+    </footer>
 
 <script>
-function openPost(id){
-  document.getElementById('home').style.display='none';
-  document.querySelectorAll('.article').forEach(p=>p.style.display='none');
-  document.getElementById(id).style.display='block';
-}
-function showHome(){
-  document.getElementById('home').style.display='block';
-  document.querySelectorAll('.article').forEach(p=>p.style.display='none');
-}
-</script>
+    const LINK_FINAL = "https://s.shopee.com.br/5VR29aqmWS";
+    const API_URL = 'https://www.cheapshark.com/api/1.0/deals?upperPrice=100&pageSize=100';
+    let allProducts = [];
 
+    async function loadContent() {
+        try {
+            const response = await fetch(API_URL);
+            const data = await response.json();
+            allProducts = data.map(game => {
+                const salePrice = parseFloat(game.salePrice) * 5.5;
+                const normalPrice = parseFloat(game.normalPrice) * 5.5;
+                return {
+                    t: game.title,
+                    isFree: salePrice === 0,
+                    p: salePrice === 0 ? "GRÁTIS" : salePrice.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }),
+                    oldP: normalPrice.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }),
+                    desc: Math.round(parseFloat(game.savings)),
+                    i: game.steamAppID && game.steamAppID !== "0" ? `https://cdn.akamai.steamstatic.com/steam/apps/${game.steamAppID}/header.jpg` : game.thumb,
+                    link: LINK_FINAL
+                };
+            });
+            render(allProducts);
+        } catch (e) { console.error(e); }
+    }
+
+    function createCard(item) {
+        return `
+            <div onclick="window.open('${item.link}', '_blank')" class="product-card bg-white rounded-xl overflow-hidden border border-gray-100 flex flex-col cursor-pointer shadow-sm">
+                <div class="relative aspect-[16/9] overflow-hidden bg-gray-200">
+                    <img src="${item.i}" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=400&auto=format&fit=crop'">
+                    ${item.desc > 5 ? `<span class="absolute top-2 right-2 bg-red-600 text-white text-[9px] font-black px-1.5 py-0.5 rounded italic">-${item.desc}%</span>` : ''}
+                </div>
+                <div class="p-4 flex flex-col flex-1">
+                    <h4 class="text-[11px] font-bold text-gray-800 line-clamp-2 h-8 mb-2 uppercase tracking-tighter leading-tight">${item.t}</h4>
+                    <div class="mt-auto">
+                        <p class="text-[8px] text-gray-400 line-through">${item.oldP}</p>
+                        <p class="text-lg font-900 ${item.isFree ? 'text-green-600' : 'text-[#5119b7]'} italic leading-none">${item.p}</p>
+                    </div>
+                    <button class="mt-4 w-full bg-[#5119b7] text-white py-2 rounded-lg text-[10px] font-black uppercase tracking-widest">Ver Oferta</button>
+                </div>
+            </div>
+        `;
+    }
+
+    function render(list) {
+        const grid1 = document.getElementById('mainGrid');
+        const grid2 = document.getElementById('moreGamesGrid');
+        const metade = Math.ceil(list.length / 2);
+        grid1.innerHTML = list.slice(0, metade).map(item => createCard(item)).join('');
+        grid2.innerHTML = list.slice(metade).map(item => createCard(item)).join('');
+    }
+
+    function filterBySearch() {
+        const term = document.getElementById('mainSearch').value.toLowerCase();
+        const filtered = allProducts.filter(p => p.t.toLowerCase().includes(term));
+        updateView(filtered);
+    }
+
+    function filterByCategory(cat, btn) {
+        document.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('active-filter'));
+        btn.classList.add('active-filter');
+        
+        document.getElementById('sectionTitle').innerText = cat || 'Todos os Jogos';
+
+        let filtered = [];
+        if (!cat) {
+            filtered = allProducts;
+        } else {
+            // Filtro dinâmico: busca pelo nome da categoria
+            filtered = allProducts.filter(p => p.t.toLowerCase().includes(cat.toLowerCase()));
+            
+            // Caso especial: se o filtro estiver vazio (como PSN), mostra as melhores ofertas 
+            // (Savings acima de 80%) para não deixar o site vazio.
+            if (filtered.length === 0) {
+                filtered = allProducts.filter(p => p.desc > 80).slice(0, 18);
+                document.getElementById('sectionTitle').innerText = `Ofertas de ${cat}`;
+            }
+        }
+        
+        updateView(filtered);
+        window.scrollTo({ top: document.getElementById('gameSection').offsetTop - 80, behavior: 'smooth' });
+    }
+
+    function updateView(list) {
+        const grid1 = document.getElementById('mainGrid');
+        const grid2 = document.getElementById('moreGamesGrid');
+        grid1.innerHTML = list.map(item => createCard(item)).join('');
+        grid2.innerHTML = ''; // Limpa a grade de baixo no filtro para foco total
+    }
+
+    document.addEventListener('DOMContentLoaded', loadContent);
+</script>
 </body>
 </html>
