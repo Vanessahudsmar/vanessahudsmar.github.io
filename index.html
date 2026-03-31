@@ -96,7 +96,7 @@
 
     <footer class="bg-gray-900 text-gray-400 py-12 border-t-8 border-[#5119b7]">
         <div class="max-w-[1400px] mx-auto px-6">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-10">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-10">
                 <div>
                     <div class="flex items-center gap-2 mb-4 text-white">
                         <i class="fa-solid fa-dragon text-2xl text-[#5119b7]"></i>
@@ -106,6 +106,15 @@
                         A VEXIS é uma plataforma de curadoria de ofertas gamer. 
                         Nossa missão é encontrar os melhores preços em jogos e acessórios para facilitar a sua próxima aventura.
                     </p>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold uppercase text-[11px] tracking-widest mb-5">Institucional</h4>
+                    <ul class="text-xs space-y-3">
+                        <li><a href="sobre.html" class="hover:text-white transition-colors">Sobre a VEXIS</a></li>
+                        <li><a href="contatp.html" class="hover:text-white transition-colors">Contato</a></li>
+                        <li><a href="privacidade.html" class="hover:text-white transition-colors">Política de Privacidade</a></li>
+                    </ul>
                 </div>
 
                 <div>
@@ -207,11 +216,7 @@
         if (!cat) {
             filtered = allProducts;
         } else {
-            // Filtro dinâmico: busca pelo nome da categoria
             filtered = allProducts.filter(p => p.t.toLowerCase().includes(cat.toLowerCase()));
-            
-            // Caso especial: se o filtro estiver vazio (como PSN), mostra as melhores ofertas 
-            // (Savings acima de 80%) para não deixar o site vazio.
             if (filtered.length === 0) {
                 filtered = allProducts.filter(p => p.desc > 80).slice(0, 18);
                 document.getElementById('sectionTitle').innerText = `Ofertas de ${cat}`;
@@ -226,11 +231,10 @@
         const grid1 = document.getElementById('mainGrid');
         const grid2 = document.getElementById('moreGamesGrid');
         grid1.innerHTML = list.map(item => createCard(item)).join('');
-        grid2.innerHTML = ''; // Limpa a grade de baixo no filtro para foco total
+        grid2.innerHTML = ''; 
     }
 
     document.addEventListener('DOMContentLoaded', loadContent);
-   
 </script>
 </body>
 </html>
